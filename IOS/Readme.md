@@ -1,7 +1,5 @@
 # IOS Penetration Testing Writeup
-
-<div style="text-align: left">
-<img src="http://172.25.10.17/DIRECTORY/writeups/IOS/img/1.svg" alt="drawing" width="100"></div>
+<img title="GitHub version" src="https://camo.githubusercontent.com/5a5546dd5c71564ddcdb6f7a315bf7dac2033915/68747470733a2f2f6432356c6369707a696a3137642e636c6f756466726f6e742e6e65742f62616467652e7376673f69643d676826747970653d3626763d312e302e302678323d30" data-canonical-src="https://d25lcipzij17d.cloudfront.net/badge.svg?id=gh&amp;type=6&amp;v=1.0.0&amp;x2=0" style="max-width:100%;">
 
 ## Introduction
 In this article series, i will be sharing about the tools and techniques which i used to perform penetration testing and Vulnerability assessment on IOS Applications.
@@ -31,9 +29,9 @@ Check for manifest.xml file and check for if there is any hardcoded credentials 
 If you are serious about IOS security, then having a jailbroken device is a must. In this section, we will look at how we can jailbreak an IOS device. Jailbreaking a device has many advantages. You can install tools like nmap, metasploit and even run your own custom python code on the device. Imagine having the power to run a vulnerability scan on a website from the palm of your hand. So i used a tool called [checkra1n](https://checkra.in/linux) to jailbreak my IOS device. For installation check the link below [checkra1n_installation](https://checkra.in/linux).
 Once the tool is successfully installed the connect your Iphone to your PC through USB and at your terminal type **checkra1n** and the terminal like below opens.
 
-![figure 1](http://172.25.10.17/DIRECTORY/writeups/IOS/img/checkrain.png)
+![figure 1](https://github.com/rootnvnj/Mobile-penetration-Testing/blob/master/IOS/checkrain.png)
 
- No need to enter into boot mode or something just plug the usb to start jailbreaking. Once the jailbreaking is successfully done then cydia is automatically installed on your device.
+No need to enter into boot mode or something just plug the usb to start jailbreaking. Once the jailbreaking is successfully done then cydia is automatically installed on your device.
  
  ### Install .ipa files in your device
  Once the jailbreaking is done then we need to install the .ipa file in our device download the [3utools](http://www.3u.com/) and install it in windows machine.Install the .ipa file in your device as below procedure for your reference:
@@ -49,7 +47,7 @@ Once the tool is successfully installed the connect your Iphone to your PC throu
 * Find and install the frida package or if you want a specific version<br>
 *For your reference*
 <div style="text-align: center">
-<img src="http://172.25.10.17/DIRECTORY/writeups/IOS/img/frida.png" alt="drawing" width="500"></div>
+<img src="https://github.com/rootnvnj/Mobile-penetration-Testing/blob/master/IOS/frida.png" alt="drawing" width="500"></div>
 
 ### Frida Usage
 Frida reference [frida_docs](https://frida.re/docs/ios/)<br>
@@ -78,14 +76,14 @@ Great, we’re good to go then! now you can run frida to know what proess are ru
 * start cydia App
 * Navigate to search option and search OpenSSH and click to install
 <div style="text-align: center">
-<img src="http://172.25.10.17/DIRECTORY/writeups/IOS/img/openssh0.PNG" alt="drawing" width="375"></div>
+<img src="https://github.com/rootnvnj/Mobile-penetration-Testing/blob/master/IOS/openssh0.PNG" alt="drawing" width="375"></div>
 <br>
 
 * select and **install**
 <br>
 
 <div style="text-align: center">
-<img src="http://172.25.10.17/DIRECTORY/writeups/IOS/img/openssh1.PNG" alt="drawing" width="400"/></div>
+<img src="https://github.com/rootnvnj/Mobile-penetration-Testing/blob/master/IOS/openssh1.PNG" alt="drawing" width="400"/></div>
 
 Initiate remote access through SSH you need to know the device IP Navigate to **Settings-> WiFi-> [your connected network]-> IP Address**<br>
 
@@ -99,7 +97,7 @@ Now, we will setup Frida on our computer by installing Objection (which includes
 `pip3 install objection`
 
 <div style="text-align: center">
-<img src="http://172.25.10.17/DIRECTORY/writeups/IOS/img/obj-1.png" alt="drawing" width="800"></div>
+<img src="https://github.com/rootnvnj/Mobile-penetration-Testing/blob/master/IOS/obj-1.png" alt="drawing" width="800"></div>
 
 #### Application exploration:
 1. To browse applications file
@@ -181,7 +179,7 @@ You can list and enable/kill any running job according to test scenarios.
 Now you should see this output
 
 <div style="text-align: center">
-<img src="http://172.25.10.17/DIRECTORY/writeups/IOS/img/obj-1.png" alt="drawing" width="800"></div>
+<img src="https://github.com/rootnvnj/Mobile-penetration-Testing/blob/master/IOS/obj-1.png" alt="drawing" width="800"></div>
 
 For more information https://kalilinuxtutorials.com/objection-mobile-exploration/ 
 
@@ -190,7 +188,7 @@ While we are talking about the filesystem, it is also possible to download files
 objection also includes an inline SQLite editor to make manipulating random sqlite databases that might exist a breeze.
 
 <div style="text-align: center">
-<img src="http://172.25.10.17/DIRECTORY/writeups/IOS/img/objection_sqlite.png" alt="drawing" width="800"></div>
+<img src="https://github.com/rootnvnj/Mobile-penetration-Testing/blob/master/IOS/objection_sqlite.png" alt="drawing" width="800"></div>
 
 #### Finding methods for a class
 Let’s define a search to find a class.
@@ -216,7 +214,7 @@ I recommend attaching to the target app’s process and then pasting the Frida s
 Once your device is connected to your network configure the device proxy server and your IP and PORT as what you have in Burpsuite Proxy. Set the Burpsuite proxy into all interfaces
 
 <div style="text-align: center">
-<img src="http://172.25.10.17/DIRECTORY/writeups/IOS/img/proxy.png" alt="drawing" width="1000"></div>
+<img src="https://github.com/rootnvnj/Mobile-penetration-Testing/blob/master/IOS/proxy.png" alt="drawing"></div>
 
 Then now you can able to intercept the connection.
 
