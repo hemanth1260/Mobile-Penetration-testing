@@ -211,7 +211,7 @@ If you try to run the scripts as a file from the command line (frida -U -p 1234 
 I recommend attaching to the target app’s process and then pasting the Frida script code you want to execute.You can also utilize the Python script for executing the Frida script code.
 
 ### Requests and Responses of an iOS Application
-Once your device is connected to your network configure the device proxy server and your IP and PORT as what you have in Burpsuite Proxy. Set the Burpsuite proxy into all interfaces
+Once your device is connected to your network configure the device proxy server as your machine IP and PORT as what you have in Burpsuite Proxy. Set the Burpsuite proxy into all interfaces
 
 <div style="text-align: center">
 <img src="https://github.com/rootnvnj/Mobile-Penetration-testing/blob/master/IOS/img/proxy.png" alt="drawing"></div>
