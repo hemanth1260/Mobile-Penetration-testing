@@ -117,7 +117,7 @@ Now, we will setup Frida on our computer by installing Objection (which includes
     `env`
 
 * Goto document folder
-  
+ 
 ``` sh
 cd /var/mobile/Containers/Data/Application/04256310-C7E7-4A1A-BA98-54D4F98235E2/Documents 
 ```
