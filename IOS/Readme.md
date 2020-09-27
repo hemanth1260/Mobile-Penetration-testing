@@ -2,6 +2,7 @@
 <img title="GitHub version" src="https://camo.githubusercontent.com/5a5546dd5c71564ddcdb6f7a315bf7dac2033915/68747470733a2f2f6432356c6369707a696a3137642e636c6f756466726f6e742e6e65742f62616467652e7376673f69643d676826747970653d3626763d312e302e302678323d30" data-canonical-src="https://d25lcipzij17d.cloudfront.net/badge.svg?id=gh&amp;type=6&amp;v=1.0.0&amp;x2=0" style="max-width:100%;">
 
 ### Follow me on
+[![Twitter Follow](https://img.shields.io/twitter/follow/thevillagehackr?style=social)](https://twitter.com/thevillagehackr)![Twitter Follow](https://img.shields.io/twitter/follow/TVHSecurity?style=social)
 ## Introduction
 In this article series, i will be sharing about the tools and techniques which i used to perform penetration testing and Vulnerability assessment on IOS Applications.
 
