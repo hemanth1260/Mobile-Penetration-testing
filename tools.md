@@ -1,9 +1,5 @@
-# Mobile Pentesting Guide
-
+# Mobile Pentesting tools and tips
 **All these mobile pentesting tips will be updated in https://six2dez.gitbook.io/pentest-book/ and https://github.com/six2dez/pentest-book**
-
-**Sorry for the inconvenience**
-
 Table of Contents
 =================
 
